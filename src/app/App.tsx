@@ -3,16 +3,16 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { useTheme } from './providers/ThemeProvider';
 import { AppRouter } from './providers/router';
 import './styles/index.scss';
+import { Navbar } from 'widget/navbar';
 
 const App = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <button onClick={toggleTheme}>Toggle</button>
-            <Link to={'/'}>Главня</Link>
-            <Link to={'/about'}>О сайте</Link>
+            <Navbar />
             <AppRouter />
+            <button onClick={toggleTheme}>Toggle</button>
         </div>
     );
 };

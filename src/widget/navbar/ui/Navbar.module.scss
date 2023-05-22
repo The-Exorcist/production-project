@@ -1,0 +1,27 @@
+.Navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
+    height: var(--navbar-height);
+    padding: 20px;
+    background-color: var(--inverted-bg-color);
+}
+
+.links {
+    display: flex;
+    column-gap: 15px;
+
+    & a {
+        text-decoration: none;
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.mainLink {
+}
