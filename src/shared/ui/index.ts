@@ -1,3 +1,3 @@
-import { AppLink } from "./AppLink/AppLink";
+import { AppLink } from './AppLink/AppLink';
 
 export { AppLink };

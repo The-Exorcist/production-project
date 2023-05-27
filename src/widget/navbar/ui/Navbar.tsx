@@ -5,19 +5,17 @@ import cls from './Navbar.module.scss';
 
 interface NavbarProps {
     className?: string;
-};
+}
 
-export const Navbar = ({ className }: NavbarProps) => {
-    return (
-        <div className={classNames(cls.Navbar, {}, [className])}>
-            <div className={cls.links}>
-                <AppLink to={"/"} className={cls.mainLink} theme={AppLinkTheme.RED}>
-                    Главня
-                </AppLink>
-                <AppLink to={'/about'} theme={AppLinkTheme.SECONDARY}>
-                    О сайте
-                </AppLink>
-            </div>
+export const Navbar = ({ className }: NavbarProps) => (
+    <div className={classNames(cls.Navbar, {}, [className])}>
+        <div className={cls.links}>
+            <AppLink to="/" className={cls.mainLink} theme={AppLinkTheme.RED}>
+                Главня
+            </AppLink>
+            <AppLink to="/about" theme={AppLinkTheme.SECONDARY}>
+                О сайте
+            </AppLink>
         </div>
-    );
-};
+    </div>
+);
