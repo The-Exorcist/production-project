@@ -2,7 +2,6 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     height: var(--navbar-height);
     padding: 20px;
     background-color: var(--inverted-bg-color);
@@ -14,13 +13,11 @@
 
     & a {
         text-decoration: none;
+
         @media (any-hover: hover) {
             &:hover {
                 text-decoration: underline;
             }
         }
     }
-}
-
-.mainLink {
 }
