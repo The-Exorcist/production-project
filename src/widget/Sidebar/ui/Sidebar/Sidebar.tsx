@@ -16,15 +16,22 @@ export const Sidebar = ({ className }: SidebarProps) => {
     };
 
     return (
-        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
+        <div className={
+            classNames(
+                cls.Sidebar,
+                { [cls.collapsed]: collapsed },
+                [className],
+            )
+        }
+        >
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <button
                     type="button"
                     onClick={onToggle}
                     style={{ cursor: 'pointer' }}
+                // eslint-disable-next-line i18next/no-literal-string
                 >
                     toggle
-
                 </button>
             </div>
             <div className={cls.switchers}>
