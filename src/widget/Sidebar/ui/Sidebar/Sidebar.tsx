@@ -16,20 +16,20 @@ export const Sidebar = ({ className }: SidebarProps) => {
     };
 
     return (
-        <div className={
-            classNames(
-                cls.Sidebar,
-                { [cls.collapsed]: collapsed },
-                [className],
-            )
-        }
+        <div
+            data-testid="sidebar"
+            className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}
         >
             <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <button
+                    data-testid="sidebar-toggle"
                     type="button"
                     onClick={onToggle}
-                    style={{ cursor: 'pointer' }}
-                // eslint-disable-next-line i18next/no-literal-string
+                    style={{
+                        cursor: 'pointer',
+                        backgroundColor: 'var(--primary-color)',
+                        color: 'var(--inverted-primary-color)',
+                    }}
                 >
                     toggle
                 </button>
