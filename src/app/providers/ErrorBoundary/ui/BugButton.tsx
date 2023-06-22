@@ -15,14 +15,7 @@ export const BugButton = () => {
     }, [error]);
 
     return (
-        <Button
-            style={{
-                color: 'var(--primary-color)',
-                backgroundColor: '#eee',
-                padding: '5px 15px',
-            }}
-            onClick={onThrow}
-        >
+        <Button onClick={onThrow}>
             {t('Пробросить ошибку')}
         </Button>
     );

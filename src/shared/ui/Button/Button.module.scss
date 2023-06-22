@@ -1,13 +1,21 @@
 .Button {
   font-size: 16px;
-  color: var(--inverted-primary-color);
+  color: var(--primary-color);
 }
 
 .clear {
+  color: #f00;
   padding: 0;
   margin: 0;
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
+}
+
+.outline {
+  padding: 10px 15px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  background: none;
 }
