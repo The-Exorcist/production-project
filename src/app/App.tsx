@@ -2,8 +2,8 @@ import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
 import { Suspense } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Sidebar } from 'widget/Sidebar';
-import { Navbar } from 'widget/navbar';
+import { Sidebar } from 'widgets/Sidebar';
+import { Navbar } from 'widgets/navbar';
 import './styles/index.scss';
 
 function App() {
