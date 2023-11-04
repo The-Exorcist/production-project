@@ -20,6 +20,9 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
+        ecmaFeatures: {
+            jsx: true,
+        },
         parser: '@typescript-eslint/parser',
         project: './tsconfig.json',
         ecmaVersion: 'latest',
@@ -28,7 +31,8 @@ module.exports = {
     plugins: [
         'react',
         'i18next',
-        "react-hooks"
+        "react-hooks",
+        '@typescript-eslint',
     ],
     rules: {
         'react/jsx-indent': [2, 4],
@@ -59,7 +63,8 @@ module.exports = {
         'jsx-a11y/no-static-element-interactions': 'off',
         'jsx-a11y/click-events-have-key-events': 'off',
         "react-hooks/rules-of-hooks": "warn",
-        "react-hooks/exhaustive-deps": "error"
+        "react-hooks/exhaustive-deps": "error",
+        'no-param-reassign': 'off',
     },
     globals: {
         __IS_DEV__: true,
