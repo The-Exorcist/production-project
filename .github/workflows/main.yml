@@ -1,16 +1,16 @@
 name: linting, testing, building
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: 
+on:
   push:
-    branches: [ master ]
+    branches: [master, dev]
   pull_request:
-    branches: [ master ]
+    branches: [master, dev]
 jobs:
   pipeline:
     runs-on: windows-2019
     strategy:
       matrix:
-        node-version: [ 16.x ]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -35,4 +35,3 @@ jobs:
       - name: screenshot testing
         run: npm run test:ui:ci
         if: always()
-      
