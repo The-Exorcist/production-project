@@ -11,7 +11,7 @@ function App() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className={classNames('app', {}, [theme])}>
+        <div className={classNames('app', {}, [])}>
             <Suspense fallback="">
                 <Navbar />
                 {/* eslint-disable-next-line i18next/no-literal-string */}
