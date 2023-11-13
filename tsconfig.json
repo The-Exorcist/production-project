@@ -11,9 +11,7 @@
         "allowSyntheticDefaultImports": true,
         "baseUrl": ".",
         "paths": {
-            "*": [
-                "./src/*"
-            ]
+            "*": ["./src/*" ]
         }
     },
     "ts-node": {
@@ -28,6 +26,7 @@
         "./config/**/*.ts",
         "./config/**/*.tsx",
         "./config/**/*.js",
-        "*.ts"
+        "*.ts",
+        "./json-server/*.js"
     ],
 }
