@@ -1,9 +1,9 @@
 /* eslint-disable i18next/no-literal-string */
-import { classNames } from 'shared/lib/classNames/classNames';
-import { Modal } from 'shared/ui/Modal/Modal';
-import { useTranslation } from 'react-i18next';
-import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { LoginModal } from 'features/AuthByUsername';
 import { useCallback, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import cls from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -14,26 +14,27 @@ export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const [isAuthModal, setIsAuthModal] = useState(false);
 
-    const onToggleModal = useCallback(() => {
-        setIsAuthModal((prev) => !prev);
+    const onCloseModal = useCallback(() => {
+        setIsAuthModal(false);
+    }, []);
+
+    const onShowModal = useCallback(() => {
+        setIsAuthModal(true);
     }, []);
 
     return (
         <div className={classNames(cls.Navbar, {}, [className])}>
             <Button
-                onClick={onToggleModal}
+                onClick={onShowModal}
                 theme={ButtonTheme.CLEAR_INVERTED}
                 className={cls.links}
             >
                 {t('Войти')}
             </Button>
-            <Modal
+            <LoginModal
                 isOpen={isAuthModal}
-                onClose={onToggleModal}
-            >
-                {/* eslint-disable-next-line max-len */}
-                {t('Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt odio quas voluptatem eaque officia doloribus a! Harum esse eum enim magnam officia, non mollitia eos? Accusamus perspiciatis unde soluta eaque? Sit aspernatur excepturi dolorum, libero eligendi repudiandae aperiam dolorem iure at. Voluptatibus iure eligendi sequi repudiandae ex provident architecto consequatur laborum deserunt dolor officiis exercitationem earum eos amet, iste similique non libero maxime beatae quae, id tempora veritatis labore perferendis? Dolores dolorem deserunt ex facilis quia sequi consectetur, temporibus ad voluptatibus provident hic? Repudiandae ex quos laudantium quo fuga suscipit dolores maxime similique expedita non nisi sequi voluptates, vel odio!')}
-            </Modal>
+                onClose={onCloseModal}
+            />
         </div>
     );
 };
