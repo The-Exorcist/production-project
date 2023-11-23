@@ -9,5 +9,10 @@
   "Коротий язык": "Ru",
   "О сайте": "About us",
   "Increament": "Increament",
-  "Decreament": "Decreament"
+  "Decreament": "Decreament",
+  "Войти": "Login",
+  "Выйти": "Logout", 
+  "Форма авторизации": "Auth form",
+  "Введите логин": "Enter Login",
+  "Введите пароль": "Enter Password"
 }
