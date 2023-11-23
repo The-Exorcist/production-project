@@ -6,11 +6,12 @@
       " Voluptatibus iure eligendi sequi repudiandae ex provident architecto consequatur laborum deserunt dolor officiis exercitationem earum eos amet, iste similique non libero maxime beatae quae, id tempora veritatis labore perferendis? Dolores dolorem deserunt ex facilis quia sequi consectetur, temporibus ad voluptatibus provident hic? Repudiandae ex quos laudantium quo fuga suscipit dolores maxime similique expedita non nisi sequi voluptates, vel odio!": " Voluptatibus iure eligendi sequi repudiandae ex provident architecto consequatur laborum deserunt dolor officiis exercitationem earum eos amet, iste similique non libero maxime beatae quae, id tempora veritatis labore perferendis? Dolores dolorem deserunt ex facilis quia sequi consectetur, temporibus ad voluptatibus provident hic? Repudiandae ex quos laudantium quo fuga suscipit dolores maxime similique expedita non nisi sequi voluptates, vel odio!"
     }
   },
-  "Введите логин": "Введите логин",
-  "Введите пароль": "Введите пароль",
-  "Введите пфроль": "Введите пфроль",
-  "Войти": "Войти",
-  "Главная": "",
+  "Введите логин": "Login",
+  "Введите пароль": "Password",
+  "Войти": "Login",
+  "Вы ввели неверный логин или пароль": "",
+  "Выйти": "",
+  "Главная": "Главная",
   "Главная страница": "Главная страница",
   "Контакты": "Контакты",
   "О сайте": "О сайте",
@@ -19,5 +20,6 @@
   "Пробросить ошибку": "Пробросить ошибку",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
   "Страница не найдена": "Страница не найдена",
+  "Форма авторизации": "Authorization form",
   "Язык": "Язык"
 }
