@@ -11,8 +11,9 @@
   "Increament": "Increament",
   "Decreament": "Decreament",
   "Войти": "Login",
-  "Выйти": "Logout", 
+  "Выйти": "Logout",
   "Форма авторизации": "Auth form",
   "Введите логин": "Enter Login",
-  "Введите пароль": "Enter Password"
+  "Введите пароль": "Enter Password",
+  "Profile page": "Profile page"
 }
