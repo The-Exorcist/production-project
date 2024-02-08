@@ -65,8 +65,10 @@ module.exports = {
         "react-hooks/rules-of-hooks": "warn",
         "react-hooks/exhaustive-deps": "error",
         'no-param-reassign': 'off',
+        'no-undef': 'off'
     },
     globals: {
         __IS_DEV__: true,
+        __API__: true,
     },
 };
