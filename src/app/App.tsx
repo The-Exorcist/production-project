@@ -7,10 +7,12 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Sidebar } from 'widgets/Sidebar';
 import { Navbar } from 'widgets/navbar';
 import './styles/index.scss';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
     const { theme } = useTheme();
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     useEffect(() => {
         dispatch(userActions.initAuthData());
