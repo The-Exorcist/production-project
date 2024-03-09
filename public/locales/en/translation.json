@@ -2,6 +2,7 @@
   "Тестовый перевод": "Translation test",
   "Перевод": "Translation",
   "Главная страница": "Main",
+  "Главная": "Main",
   "Язык": "Русский",
   "Страница не найдена": "Page not found",
   "Пробросить ошибку": "Throw error",
@@ -15,5 +16,18 @@
   "Форма авторизации": "Auth form",
   "Введите логин": "Enter Login",
   "Введите пароль": "Enter Password",
-  "Profile page": "Profile page"
+  "Profile page": "Profile page",
+  "Cancel": "Cancel",
+  "Edit": "Edit",
+  "Profile": "Profile",
+  "Профиль": "Profile",
+  "Save": "Save",
+  "Age": "Age",
+  "City": "City",
+  "profile": {
+    "Username": "Username",
+    "Avatar link": "Avatar link"
+  },
+  "Currency": "Currency",
+  "Country": "Country"
 }
