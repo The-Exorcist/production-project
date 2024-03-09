@@ -1,0 +1,17 @@
+.ProfilePageHeader {
+  display: flex;
+  column-gap: 15px;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .header {
+    display: flex;
+  }
+
+  .editBtn {
+    margin-left: auto;
+  }
+}
