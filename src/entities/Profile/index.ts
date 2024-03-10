@@ -1,6 +1,7 @@
 export {
     Profile,
     ProfileSchema,
+    ValidateProfileError,
 } from './modal/types/profile';
 
 export {
@@ -25,3 +26,4 @@ export { getProfileData } from './modal/selectors/getProfileData/getProfileData'
 export { getProfileError } from './modal/selectors/getProfileError/getProfileError';
 export { getProfileReadonly } from './modal/selectors/getProfileReadonly/getProfileReadonly';
 export { getProfileForm } from './modal/selectors/getProfileForm/getProfileForm';
+export { getProfileValidateErrors } from './modal/selectors/getProfileValidateErrors/getProfileValidateErrors';
