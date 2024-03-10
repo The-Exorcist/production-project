@@ -20,14 +20,5 @@
   "Cancel": "Cancel",
   "Edit": "Edit",
   "Profile": "Profile",
-  "Профиль": "Profile",
-  "Save": "Save",
-  "Age": "Age",
-  "City": "City",
-  "profile": {
-    "Username": "Username",
-    "Avatar link": "Avatar link"
-  },
-  "Currency": "Currency",
-  "Country": "Country"
+  "Профиль": "Profile"
 }

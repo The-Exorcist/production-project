@@ -1,6 +1,18 @@
 {
-    "Profile": "Profile",
-    "Edit": "Edit",
-    "First name": "First name",
-    "Last name": "Last name"
+  "Profile": "Profile",
+  "Edit": "Edit",
+  "First name": "First name",
+  "Last name": "Last name",
+  "Server error": "Server error",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
+  "First and last name required": "First and last name required",
+  "No data": "No data",
+  "Username": "Username",
+  "Avatar link": "Avatar link",
+  "Save": "Save",
+  "Age": "Age",
+  "City": "City",
+  "Currency": "Currency",
+  "Country": "Country"
 }
