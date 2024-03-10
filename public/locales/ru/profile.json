@@ -1,7 +1,19 @@
- {
-    "Edit": "Редактировать",
-    "Profile": "Профиль",
-    "First name": "Имя",
-    "Last name": "Фамилия"
-  }
-
+{
+  "Edit": "Редактировать",
+  "Profile": "Профиль",
+  "First name": "Имя",
+  "Last name": "Фамилия",
+  "Cancel": "Отмена",
+  "Server error": "Ошибка сервера",
+  "Incorrect age": "Неправильный возраст",
+  "Incorrect country": "Неверная страна",
+  "First and last name required": "Требуется имя и фамилия",
+  "No data": "Нет данных",
+  "Username": "Имя пользователя",
+  "Avatar link": "Ссылка на аватар",
+  "Save": "Сохранять",
+  "Age": "Возраст",
+  "City": "Город",
+  "Currency": "Валюта",
+  "Country": "Страна"
+}

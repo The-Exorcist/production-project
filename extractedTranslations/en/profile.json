@@ -1,8 +1,29 @@
 {
+  "": {
+    "serverError": ""
+  },
+  "Age": "",
+  "Avatar link": "",
+  "Cancel": "",
+  "City": "",
   "Edit": "",
+  "First and last name ": "",
+  "First and last name have to be fulfilled": "",
+  "First and last name required": "",
   "First name": "",
+  "Incorrect age": "",
+  "Incorrect country": "",
   "Last name": "",
   "Lastname name": "",
+  "No data": "",
   "Profile": "",
-  "Second name": ""
+  "Save": "",
+  "Second name": "",
+  "Server error": "",
+  "Username": "",
+  "profile": {
+    "serverError": ""
+  },
+  "Попробуйте обновить страницу": "",
+  "Произошла ошибка при загрузке профиля": ""
 }

@@ -1,7 +1,19 @@
 {
+  "": "",
+  "Age": "Age",
+  "Avatar link": "Avatar link",
+  "Cancel": "Cancel",
+  "City": "City",
+  "Country": "Country",
+  "Currency": "Currency",
   "Decreament": "Decreament",
   "Edit": "Edit",
+  "First and last name ": "First and last name ",
+  "First and last name have to be fulfilled": "First and last name have to be fulfilled",
+  "First and last name required": "First and last name required",
   "First name": "First name",
+  "Incorrect age": "Incorrect age",
+  "Incorrect country": "Incorrect country",
   "Increament": "Increament",
   "Last name": "Last name",
   "Lastname name": "Lastname name",
@@ -10,9 +22,16 @@
       " Voluptatibus iure eligendi sequi repudiandae ex provident architecto consequatur laborum deserunt dolor officiis exercitationem earum eos amet, iste similique non libero maxime beatae quae, id tempora veritatis labore perferendis? Dolores dolorem deserunt ex facilis quia sequi consectetur, temporibus ad voluptatibus provident hic? Repudiandae ex quos laudantium quo fuga suscipit dolores maxime similique expedita non nisi sequi voluptates, vel odio!": " Voluptatibus iure eligendi sequi repudiandae ex provident architecto consequatur laborum deserunt dolor officiis exercitationem earum eos amet, iste similique non libero maxime beatae quae, id tempora veritatis labore perferendis? Dolores dolorem deserunt ex facilis quia sequi consectetur, temporibus ad voluptatibus provident hic? Repudiandae ex quos laudantium quo fuga suscipit dolores maxime similique expedita non nisi sequi voluptates, vel odio!"
     }
   },
+  "No data": "No data",
   "Profile": "Profile",
   "Profile page": "Profile page",
+  "Save": "Save",
   "Second name": "Second name",
+  "Server error": "Server error",
+  "Username": "Username",
+  "profile": {
+    "serverError": "serverError"
+  },
   "Введите логин": "Введите логин",
   "Введите пароль": "Введите пароль",
   "Войти": "Войти",
@@ -24,8 +43,10 @@
   "О сайте": "О сайте",
   "Обновить страницу": "Обновить страницу",
   "Переключить": "Переключить",
+  "Попробуйте обновить страницу": "Попробуйте обновить страницу",
   "Пробросить ошибку": "Пробросить ошибку",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+  "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
   "Страница не найдена": "Страница не найдена",
   "Форма авторизации": "Форма авторизации",
   "Язык": "Язык"
