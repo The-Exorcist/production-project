@@ -2,7 +2,9 @@
   "": "",
   "Age": "Age",
   "Aricles page": "Aricles page",
+  "Aritcle Details": "Aritcle Details",
   "Article Details Page": "Article Details Page",
+  "Article not found": "Article not found",
   "Avatar link": "Avatar link",
   "Cancel": "Cancel",
   "City": "City",
@@ -19,6 +21,13 @@
   "Increament": "Increament",
   "Last name": "Last name",
   "Lastname name": "Lastname name",
+  "Loading": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Lorem ipsum dolor sit amet consectetur, adipisicing elit": {
     " Deserunt odio quas voluptatem eaque officia doloribus a! Harum esse eum enim magnam officia, non mollitia eos? Accusamus perspiciatis unde soluta eaque? Sit aspernatur excepturi dolorum, libero eligendi repudiandae aperiam dolorem iure at": {
       " Voluptatibus iure eligendi sequi repudiandae ex provident architecto consequatur laborum deserunt dolor officiis exercitationem earum eos amet, iste similique non libero maxime beatae quae, id tempora veritatis labore perferendis? Dolores dolorem deserunt ex facilis quia sequi consectetur, temporibus ad voluptatibus provident hic? Repudiandae ex quos laudantium quo fuga suscipit dolores maxime similique expedita non nisi sequi voluptates, vel odio!": " Voluptatibus iure eligendi sequi repudiandae ex provident architecto consequatur laborum deserunt dolor officiis exercitationem earum eos amet, iste similique non libero maxime beatae quae, id tempora veritatis labore perferendis? Dolores dolorem deserunt ex facilis quia sequi consectetur, temporibus ad voluptatibus provident hic? Repudiandae ex quos laudantium quo fuga suscipit dolores maxime similique expedita non nisi sequi voluptates, vel odio!"
@@ -31,6 +40,10 @@
   "Second name": "Second name",
   "Server error": "Server error",
   "Username": "Username",
+  "articleDetailsPage": {
+    "notFound": "notFound"
+  },
+  "error": "error",
   "profile": {
     "serverError": "serverError"
   },
@@ -48,7 +61,9 @@
   "Попробуйте обновить страницу": "Попробуйте обновить страницу",
   "Пробросить ошибку": "Пробросить ошибку",
   "Произошла непредвиденная ошибка": "Произошла непредвиденная ошибка",
+  "Произошла ошибка при загрузке": "Произошла ошибка при загрузке",
   "Произошла ошибка при загрузке профиля": "Произошла ошибка при загрузке профиля",
+  "Произошла ошибка при загрузке статьи": "Произошла ошибка при загрузке статьи",
   "Страница не найдена": "Страница не найдена",
   "Форма авторизации": "Форма авторизации",
   "Язык": "Язык"

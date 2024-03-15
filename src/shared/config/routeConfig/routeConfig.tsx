@@ -1,4 +1,4 @@
-import { RouteProps } from 'react-router-dom';
+import { Route, RouteProps } from 'react-router-dom';
 import { AboutPage } from 'pages/AboutPage';
 import { MainPage } from 'pages/MainPage';
 import { NotFoundPage } from 'pages/NotFoundPage';
@@ -48,7 +48,7 @@ export const routeConfig: Record<AppRoutes, AppRoutesProps> = {
         authOnly: true,
     },
     [AppRoutes.ARTICLEDETAILS]: {
-        path: `${RoutePath[AppRoutes.ARTICLEDETAILS]}:id`,
+        path: `${RoutePath[AppRoutes.ARTICLEDETAILS]}/:id`,
         element: <ArticleDetailsPage />,
         authOnly: true,
     },
