@@ -1,0 +1,38 @@
+.aritcleDetails {
+  min-height: 100%;
+}
+
+.avatar {
+  margin: 0 auto;
+}
+
+.title {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.skeleton {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.articleInfo {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 8px 0 0;
+}
+
+.avatarWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.block {
+  margin-top: 16px;
+}
