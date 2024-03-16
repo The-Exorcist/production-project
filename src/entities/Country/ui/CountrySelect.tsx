@@ -3,7 +3,6 @@ import { useTranslation } from 'react-i18next';
 import { Select } from 'shared/ui/Select/Select';
 import { memo, useCallback } from 'react';
 import { Country } from '../model/types/country';
-import cls from './Country.module.scss';
 
 interface CountrySelectProps {
     className?: string;
@@ -17,7 +16,7 @@ const options = [
     { value: Country.Belarus, content: Country.Belarus },
     { value: Country.Kazahstan, content: Country.Kazahstan },
     { value: Country.Russia, content: Country.Russia },
-    { value: Country.Ukrain, content: Country.Ukrain },
+    { value: Country.Ukraine, content: Country.Ukraine },
 ];
 
 export const CountrySelect = memo((props: CountrySelectProps) => {

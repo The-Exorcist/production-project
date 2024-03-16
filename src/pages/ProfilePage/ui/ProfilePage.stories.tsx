@@ -21,29 +21,13 @@ Normal.args = {};
 Normal.decorators = [StoreDecorator({
     profile: {
         form: {
-            username: 'admin',
+            username: 'The Exorcist',
             age: 29,
-            country: Country.Ukrain,
-            lastname: 'Gunkin',
-            first: 'Konstantin',
+            country: Country.Russia,
+            lastname: 'Гунькинн',
+            first: 'Константин',
             city: 'Voronezh',
-            currency: Currency.USD,
-        },
-    },
-})];
-
-export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
-    profile: {
-        form: {
-            username: 'admin',
-            age: 29,
-            country: Country.Ukrain,
-            lastname: 'Gunkin',
-            first: 'Konstantin',
-            city: 'Voronezh',
-            currency: Currency.USD,
+            currency: Currency.RUB,
         },
     },
 })];
