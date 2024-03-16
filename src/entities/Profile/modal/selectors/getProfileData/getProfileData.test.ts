@@ -8,7 +8,7 @@ describe('getProfileData.test', () => {
         const data = {
             username: 'admin',
             age: 29,
-            country: Country.Ukrain,
+            country: Country.Ukraine,
             lastname: 'Gunkin',
             first: 'Konstantin',
             city: 'Voronezh',

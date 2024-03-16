@@ -23,7 +23,7 @@ Normal.decorators = [StoreDecorator({
         form: {
             username: 'admin',
             age: 29,
-            country: Country.Ukrain,
+            country: Country.Ukraine,
             lastname: 'Gunkin',
             first: 'Konstantin',
             city: 'Voronezh',
@@ -39,7 +39,7 @@ Dark.decorators = [ThemeDecorator(Theme.DARK), StoreDecorator({
         form: {
             username: 'admin',
             age: 29,
-            country: Country.Ukrain,
+            country: Country.Ukraine,
             lastname: 'Gunkin',
             first: 'Konstantin',
             city: 'Voronezh',

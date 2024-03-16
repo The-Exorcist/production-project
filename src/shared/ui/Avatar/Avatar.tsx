@@ -1,5 +1,4 @@
 import { Mods, classNames } from 'shared/lib/classNames/classNames';
-
 import { CSSProperties, useMemo } from 'react';
 import cls from './Avatar.module.scss';
 
@@ -12,6 +11,7 @@ interface AvatarProps {
 
 export const Avatar = (props: AvatarProps) => {
     const mods: Mods = {};
+
     const {
         className,
         src,
