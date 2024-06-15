@@ -9,9 +9,10 @@ const data = {
     age: 29,
     country: Country.Ukraine,
     lastname: 'Gunkin',
-    first: 'Konstantin',
+    firstname: 'Konstantin',
     city: 'Voronezh',
     currency: Currency.USD,
+    id: '1',
 };
 describe('updateProfileData.test', () => {
     test('success', async () => {

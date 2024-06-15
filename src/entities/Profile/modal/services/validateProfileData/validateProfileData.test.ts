@@ -1,14 +1,14 @@
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
+import { ValidateProfileError } from 'entities/Profile';
 import { validateProfileData } from './validateProfileData';
-import { ValidateProfileError } from '../../types/profile';
 
 const data = {
     username: 'admin',
     age: 29,
     country: Country.Ukraine,
     lastname: 'Gunkin',
-    first: 'Konstantin',
+    firstname: 'Konstantin',
     city: 'Voronezh',
     currency: Currency.USD,
 };
@@ -20,7 +20,7 @@ describe('validateProfileData.test', () => {
     });
 
     test('without first and last name', async () => {
-        const result = validateProfileData({ ...data, first: '', lastname: '' });
+        const result = validateProfileData({ ...data, firstname: '', lastname: '' });
 
         expect(result).toEqual([
             ValidateProfileError.INCORRECT_USER_DATA,

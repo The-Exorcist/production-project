@@ -14,7 +14,7 @@ export default {
 const Template: ComponentStory<typeof ArticleDetailsPage> = (args) => <ArticleDetailsPage {...args} />;
 
 const article: Article = {
-    id: 1,
+    id: '1',
     title: 'JavaScript news',
     subtitle: 'Что нового в JavaScript за 2023 год',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',

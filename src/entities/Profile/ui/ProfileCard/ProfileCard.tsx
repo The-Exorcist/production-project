@@ -73,11 +73,11 @@ export const ProfileCard = (props: ProfileCardProps) => {
             <div className={cls.data}>
                 {data?.avatar && (
                     <div className={cls.avatarWrapper}>
-                        <Avatar src={data?.avatar} alt={data?.first} />
+                        <Avatar src={data?.avatar} alt={data?.firstname} />
                     </div>
                 )}
                 <Input
-                    value={data?.first}
+                    value={data?.firstname}
                     placeholder={t('First name')}
                     className={cls.input}
                     onChange={onChangeFirstname}

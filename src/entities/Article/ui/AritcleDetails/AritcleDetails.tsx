@@ -1,27 +1,27 @@
 import {
-    getArticleDetailsDate,
+    getArticleDetailsData,
     getArticleDetailsError,
     getArticleDetailsIsLoading,
 } from 'entities/Article/model/selectors/articleDetails';
 import { memo, useCallback, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
+import CalendarIcon from 'shared/assets/icons/calendar-20-20.svg';
+import EyeIcon from 'shared/assets/icons/eye-20-20.svg';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
-import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch';
-import { Text, TextAlign, TextSize } from 'shared/ui/Text/Text';
-import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { Avatar } from 'shared/ui/Avatar/Avatar';
-import EyeIcon from 'shared/assets/icons/eye-20-20.svg';
-import CalendarIcon from 'shared/assets/icons/calendar-20-20.svg';
 import { Icon } from 'shared/ui/Icon/Icon';
-import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
+import { Skeleton } from 'shared/ui/Skeleton/Skeleton';
+import { Text, TextAlign, TextSize } from 'shared/ui/Text/Text';
 import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
-import cls from './AritcleDetails.module.scss';
+import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
 import { ArticleCodeBlockComponent } from '../ArticleCodeBlockComponent/ArticleCodeBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
+import cls from './AritcleDetails.module.scss';
 
 interface AritcleDetailsProps {
     className?: string;
@@ -37,7 +37,7 @@ export const AritcleDetails = memo((props: AritcleDetailsProps) => {
     const { t } = useTranslation();
     const dispatch = useAppDispatch();
     const isLoading = useSelector(getArticleDetailsIsLoading);
-    const article = useSelector(getArticleDetailsDate);
+    const article = useSelector(getArticleDetailsData);
     const error = useSelector(getArticleDetailsError);
 
     const renderBlock = useCallback((block: ArticleBlock) => {
