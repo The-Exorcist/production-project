@@ -102,6 +102,30 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Hello world!",
+      "id": "3A6EGdU"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Hello world2!",
+      "id": "M4lWb5L"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "!dlrow olleH",
+      "id": "edkR-CS"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "Olah amigos!",
+      "id": "Du0teX_"
     }
   ],
   "users": [
@@ -120,15 +144,28 @@
       "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
-  "profile": {
-    "firstname": "Константин",
-    "lastname": "Гунькинн",
-    "age": 29,
-    "currency": "USD",
-    "country": "Russia",
-    "city": "Voronezh",
-    "usename": "admin",
-    "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
-    "username": "The Exorcist"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "firstname": "Константин",
+      "lastname": "Гунькинн",
+      "age": 30,
+      "currency": "EUR",
+      "country": "Russia",
+      "city": "Voronezh",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg",
+      "username": "The Exorcist"
+    },
+    {
+      "id": "2",
+      "firstname": "John",
+      "lastname": "Doe",
+      "age": 29,
+      "currency": "USD",
+      "country": "America",
+      "city": "Los Angeles",
+      "avatar": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
+      "username": "The Exorcist"
+    }
+  ]
 }

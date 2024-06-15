@@ -1,6 +1,6 @@
 import { StateSchema } from 'app/providers/StoreProvider';
 import {
-    getArticleDetailsDate,
+    getArticleDetailsData,
     getArticleDetailsError,
     getArticleDetailsIsLoading,
 } from './articleDetails';
@@ -8,23 +8,23 @@ import {
 describe('getProfileData.test', () => {
     test('should return data', () => {
         const data = {
-            id: 1,
+            id: '1',
             title: 'subtitle',
         };
 
         const state: DeepPartial<StateSchema> = {
             articleDetails: {
                 data: {
-                    id: 1,
+                    id: '1',
                     title: 'subtitle',
                 },
             },
         };
-        expect(getArticleDetailsDate(state as StateSchema)).toEqual(data);
+        expect(getArticleDetailsData(state as StateSchema)).toEqual(data);
     });
     test('should work with empty state', () => {
         const state: DeepPartial<StateSchema> = {};
-        expect(getArticleDetailsDate(state as StateSchema)).toEqual(undefined);
+        expect(getArticleDetailsData(state as StateSchema)).toEqual(undefined);
     });
 
     test('should return error', () => {
