@@ -1,0 +1,12 @@
+.ArticleList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.TILE {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}

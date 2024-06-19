@@ -7,6 +7,7 @@
   "Article Details Page": "Article Details Page",
   "Article not found": "Article not found",
   "Avatar link": "Avatar link",
+  "Back": "Back",
   "Cancel": "Cancel",
   "City": "City",
   "Comments": "Comments",
@@ -38,6 +39,13 @@
   "No data": "No data",
   "Profile": "Profile",
   "Profile page": "Profile page",
+  "Read more": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
   "Save": "Save",
   "Second name": "Second name",
   "Send": "Send",
