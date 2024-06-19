@@ -22,5 +22,8 @@
   "Profile": "Profile",
   "Профиль": "Profile",
   "Add a comment": "Add a comment",
-  "Send": "Send"
+  "Send": "Send",
+  "article-details": {
+    "Back": "Back"
+  }
 }
