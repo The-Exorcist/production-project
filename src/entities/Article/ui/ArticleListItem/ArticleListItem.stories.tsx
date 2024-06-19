@@ -1,38 +1,39 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Article, ArticleBlockType, ArticleType } from 'entities/Article/model/types/article';
-import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProvider';
-import { AritcleDetails } from './AritcleDetails';
+import { Article, ArticleView } from 'entities/Article/model/types/article';
+import { ArticleListItem } from './ArticleListItem';
 
 export default {
-    title: 'entities/Article/AritcleDetails',
-    component: AritcleDetails,
+    title: 'entities/Article/ArticleListItem',
+    component: ArticleListItem,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof AritcleDetails>;
+} as ComponentMeta<typeof ArticleListItem>;
 
-const Template: ComponentStory<typeof AritcleDetails> = (args) => <AritcleDetails {...args} />;
+const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListItem {...args} />;
 
-const article: Article = {
+const article = {
     id: '1',
     title: 'JavaScript news',
-    subtitle: 'Что нового в JavaScript за 2023 год',
+    subtitle: 'Что нового в JavaScript за 2023 год Что нового в JavaScript за 2023 год',
     img: 'https://teknotower.com/wp-content/uploads/2020/11/js.png',
     views: 1022,
     createdAt: '26.02.2022',
     user: {
         id: '1',
-        username: 'Александр',
+        username: 'Konstantin',
         avatar: 'https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg',
-
     },
-    type: [ArticleType.IT],
+    type: [
+        'IT',
+        'POLITICS',
+        'ECONOMICS',
+        'SCITICS',
+    ],
     blocks: [
         {
             id: '1',
-            type: ArticleBlockType.TEXT,
+            type: 'TEXT',
             title: 'Заголовок этого блока',
             paragraphs: [
                 'Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.',
@@ -42,12 +43,12 @@ const article: Article = {
         },
         {
             id: '4',
-            type: ArticleBlockType.CODE,
+            type: 'CODE',
             code: '<!DOCTYPE html>\n<html>\n  <body>\n    <p id="hello"></p>\n\n    <script>\n      document.getElementById("hello").innerHTML = "Hello, world!";\n    </script>\n  </body>\n</html>;',
         },
         {
             id: '5',
-            type: ArticleBlockType.TEXT,
+            type: 'TEXT',
             title: 'Заголовок этого блока',
             paragraphs: [
                 'Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.',
@@ -56,18 +57,18 @@ const article: Article = {
         },
         {
             id: '2',
-            type: ArticleBlockType.IMAGE,
+            type: 'IMAGE',
             src: 'https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png',
             title: 'Рисунок 1 - скриншот сайта',
         },
         {
             id: '3',
-            type: ArticleBlockType.CODE,
+            type: 'CODE',
             code: "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);",
         },
         {
             id: '7',
-            type: ArticleBlockType.TEXT,
+            type: 'TEXT',
             title: 'Заголовок этого блока',
             paragraphs: [
                 'JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.',
@@ -76,56 +77,29 @@ const article: Article = {
         },
         {
             id: '8',
-            type: ArticleBlockType.IMAGE,
+            type: 'IMAGE',
             src: 'https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png',
             title: 'Рисунок 1 - скриншот сайта',
         },
         {
             id: '9',
-            type: ArticleBlockType.TEXT,
+            type: 'TEXT',
             title: 'Заголовок этого блока',
             paragraphs: [
                 'JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.',
             ],
         },
     ],
+} as Article;
+
+export const Simple = Template.bind({});
+Simple.args = {
+    view: ArticleView.SIMPLE,
+    article,
 };
 
-export const Normal = Template.bind({});
-Normal.args = {};
-Normal.decorators = [StoreDecorator({
-    articleDetails: {
-        data: article,
-    },
-})];
-
-export const Dark = Template.bind({});
-Dark.args = {};
-Dark.decorators = [
-    StoreDecorator({
-        articleDetails: {
-            data: article,
-        },
-    }),
-    ThemeDecorator(Theme.DARK),
-];
-
-export const Loading = Template.bind({});
-Loading.args = {};
-Loading.decorators = [
-    StoreDecorator({
-        articleDetails: {
-            isLoading: true,
-        },
-    }),
-];
-
-export const Error = Template.bind({});
-Error.args = {};
-Error.decorators = [
-    StoreDecorator({
-        articleDetails: {
-            error: 'error',
-        },
-    }),
-];
+export const Tile = Template.bind({});
+Tile.args = {
+    view: ArticleView.TILE,
+    article,
+};
