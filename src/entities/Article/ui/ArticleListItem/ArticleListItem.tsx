@@ -79,12 +79,12 @@ export const ArticleListItem = memo((props : ArticleListItemProps) => {
                     <Text text={article.createdAt} className={cls.date} />
                 </div>
                 <div className={cls.infoWrapper}>
-                    <AppLink to={`${RoutePath.articles}/${article.id}`}>
-                        {types}
-                    </AppLink>
+                    {types}
                     {views}
                 </div>
-                <Text text={article.title} className={cls.title} />
+                <AppLink to={`${RoutePath.articles}/${article.id}`}>
+                    <Text text={article.title} className={cls.title} />
+                </AppLink>
             </Card>
         </div>
     );
