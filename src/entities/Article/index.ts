@@ -1,3 +1,4 @@
+export { ArticleViewSelector } from './ui/ArticleViewSelector/ArticleViewSelector';
 export { ArticleDetailsSchema } from './model/types/ArticleDetailsSchema';
 export {
     AritcleDetails,
