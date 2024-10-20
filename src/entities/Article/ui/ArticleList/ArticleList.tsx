@@ -7,10 +7,10 @@ import cls from './ArticleList.module.scss';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 
 interface ArticleListProps {
-   className?: string;
-   articles: Article[];
-   isLoading?: boolean;
-   view?: ArticleView;
+    className?: string;
+    articles: Article[];
+    isLoading?: boolean;
+    view?: ArticleView;
 }
 
 const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.TILE ? 9 : 3)
@@ -19,29 +19,19 @@ const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.TILE 
         <ArticleListItemSkeleton className={cls.card} key={index} view={view} />
     ));
 
-export const ArticleList = memo((props : ArticleListProps) => {
+export const ArticleList = memo((props: ArticleListProps) => {
     const {
-        className,
-        articles,
-        isLoading,
-        view = ArticleView.TILE,
+        className, articles, isLoading, view = ArticleView.TILE,
     } = props;
     const { t } = useTranslation();
 
     const renderArticle = (article: Article) => (
-        <ArticleListItem
-            className={cls.card}
-            article={article}
-            view={view}
-            key={article.id}
-        />
+        <ArticleListItem className={cls.card} article={article} view={view} key={article.id} />
     );
 
     return (
         <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-            {articles.length > 0
-                ? articles.map(renderArticle)
-                : null}
+            {articles.length > 0 ? articles.map(renderArticle) : null}
             {isLoading && getSkeletons(view)}
         </div>
     );
