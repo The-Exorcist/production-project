@@ -36,7 +36,7 @@ export const CommentList = (props:CommentListProps) => {
                         comment={comment}
                     />
                 ))
-                : <Text title={t('Комментарии отсутстуют')} />}
+                : <Text title={t('There are no comments yet')} />}
         </div>
     );
 };

@@ -1,4 +1,9 @@
 {
-    "Article not found": "Статья не найдена",
-    "Comments": "Комментарии"
+  "Article not found": "Статья не найдена",
+  "Comments": "Комментарии",
+  "article-details": {
+    "Recommendations": "Рекомендации",
+    "Comments": "Комментарии",
+    "Article not found": "Статья не найдена"
+  }
 }

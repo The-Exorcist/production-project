@@ -1,4 +1,9 @@
 {
-    "Article not found": "Article not found",
-    "Comments": "Comments"
+  "Article not found": "Article not found",
+  "Comments": "Comments",
+  "article-details": {
+    "Recommendations": "Recommendations",
+    "Comments": "Comments",
+    "Article not found": "Article not found"
+  }
 }

@@ -46,10 +46,12 @@
       }
     }
   },
+  "Recommendations": "Recommendations",
   "Save": "Save",
   "Second name": "Second name",
   "Send": "Send",
   "Server error": "Server error",
+  "There are no comments yet": "There are no comments yet",
   "Username": "Username",
   "articleDetailsPage": {
     "notFound": "notFound"
@@ -68,6 +70,7 @@
   "Выйти": "",
   "Главная": "Главная",
   "Главная страница": "Главная страница",
+  "Комментарии отсутствуют": "Комментарии отсутствуют",
   "Комментарии отсутстуют": "",
   "Контакты": "Контакты",
   "Наука": "Наука",

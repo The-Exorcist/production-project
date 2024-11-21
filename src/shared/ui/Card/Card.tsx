@@ -8,7 +8,7 @@ export enum CardTheme {
 }
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
-   className?: string;
+    className?: string;
     children: ReactNode;
     theme?: CardTheme;
 }
