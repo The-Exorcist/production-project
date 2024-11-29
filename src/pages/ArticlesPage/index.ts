@@ -2,5 +2,5 @@ export { getArticlesPageView } from './model/selectors/getArticlesPageView/getAr
 
 export { ArticlesPageSchema } from './model/types/ArticlesPageSchema';
 export {
-    ArticlesPageAsync as ArticlePage,
+    ArticlesPageAsync as ArticlesPage,
 } from './ui/ArticlesPage/ArticlesPage.async';

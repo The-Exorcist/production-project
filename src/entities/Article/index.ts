@@ -10,3 +10,4 @@ export {
 } from './model/types/article';
 export { ArticleList } from './ui/ArticleList/ArticleList';
 export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
+export { getArticleDetailsData } from './model/selectors/articleDetails';
