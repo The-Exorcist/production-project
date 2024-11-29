@@ -7,7 +7,7 @@
     "start": "webpack serve --env port:3000",
     "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
     "start:dev:server": "node ./json-server/index.js",
-    "build": "webpack --env mode=production apiUrl=https://vercel.com/konstantins-projects-1bac92b6/production-project-server/8DqZdFs4QQ5fCuVKekfp3t1bWzAf",
+    "build": "webpack --env mode=production",
     "dev": "webpack --env mode=development",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
     "fix:ts": "eslint \"**/*.{ts,tsx}\" --fix",
