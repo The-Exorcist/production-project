@@ -11,9 +11,9 @@ import { Card } from 'shared/ui/Card/Card';
 import { Input } from 'shared/ui/Input/Input';
 
 import { ArticleType } from 'entities/Article/model/types/article';
-import { getArticlesPageType } from 'pages/ArticlesPage/model/selectors/getArticlesPageType/getArticlesPageType';
 import { useDebounce } from 'shared/lib/hooks/useDebounce/useDebounce';
 import { SortOrder } from 'shared/types';
+import { getArticlesPageType } from '../../model/selectors/getArticlesPageType/getArticlesPageType';
 import { getArtcilesPageOrder } from '../../model/selectors/getArtcilesPageOrder/getArtcilesPageOrder';
 import { getArticlesPageSearch } from '../../model/selectors/getArticlesPageSearch/getArticlesPageSearch';
 import { getArticlesPageSort } from '../../model/selectors/getArticlesPageSort/getArticlesPageSort';

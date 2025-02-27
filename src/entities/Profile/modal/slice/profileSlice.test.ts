@@ -6,7 +6,7 @@ import {
     ProfileSchema,
     ValidateProfileError,
     updateProfileData,
-} from 'entities/Profile';
+} from '../../../Profile';
 
 const data = {
     username: 'admin',
