@@ -28,6 +28,7 @@
         "./config/**/*.tsx",
         "./config/**/*.js",
         "*.ts",
-        "./json-server/*.js"
+        "./json-server/*.js",
+        ".eslintrc.js"
     ],
 }

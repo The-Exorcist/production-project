@@ -1,3 +1,4 @@
+// eslint-disable-next-line path-revise/path-revise
 import { classNames } from 'shared/lib/classNames/classNames';
 
 describe('classNames', () => {
