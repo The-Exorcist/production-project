@@ -69,3 +69,10 @@ SizeM.args = {
     text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, laudantium quas sed alias qui nemo quo vero aliquid aperiam molestias commodi debitis optio, facere, exercitationem eveniet reiciendis voluptas dolores delectus?',
     size: TextSize.M,
 };
+
+export const SizeS = Template.bind({});
+SizeS.args = {
+    title: 'Lorem ipsum dolor',
+    text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, laudantium quas sed alias qui nemo quo vero aliquid aperiam molestias commodi debitis optio, facere, exercitationem eveniet reiciendis voluptas dolores delectus?',
+    size: TextSize.S,
+};
