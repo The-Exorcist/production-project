@@ -6,7 +6,9 @@
 }
 
 .TILE {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  flex-direction: row;
   gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }

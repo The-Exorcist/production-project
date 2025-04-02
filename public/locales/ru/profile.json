@@ -15,5 +15,6 @@
   "Age": "Возраст",
   "City": "Город",
   "Currency": "Валюта",
-  "Country": "Страна"
+  "Country": "Страна",
+  "Profile not found": "Профиль не найден"
 }
