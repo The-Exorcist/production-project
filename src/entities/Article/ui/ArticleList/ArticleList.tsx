@@ -13,6 +13,7 @@ interface ArticleListProps {
     isLoading?: boolean;
     view?: ArticleView;
     target?: HTMLAttributeAnchorTarget;
+    virtualized?: boolean;
 }
 
 const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.TILE ? 9 : 3)
@@ -23,7 +24,7 @@ const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.TILE 
 
 export const ArticleList = memo((props: ArticleListProps) => {
     const {
-        className, articles, isLoading, view = ArticleView.TILE, target,
+        className, articles, isLoading, view = ArticleView.TILE, target, virtualized,
     } = props;
     const { t } = useTranslation();
 
