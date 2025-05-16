@@ -5,7 +5,9 @@ import { useTranslation } from 'react-i18next';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUserAuthData, userActions } from 'entities/User';
+import {
+    getUserAuthData, isUserAdmin, isUserManager, userActions,
+} from 'entities/User';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { AppLink } from 'shared/ui';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
@@ -22,6 +24,8 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const [isAuthModal, setIsAuthModal] = useState(false);
     const authData = useSelector(getUserAuthData);
+    const isAdmin = useSelector(isUserAdmin);
+    const isManager = useSelector(isUserManager);
     const dispatch = useDispatch();
 
     const onCloseModal = useCallback(() => {
@@ -35,6 +39,8 @@ export const Navbar = memo(({ className }: NavbarProps) => {
     const onLogout = useCallback(() => {
         dispatch(userActions.logout());
     }, [dispatch]);
+
+    const isAdminPanelAvailable = isAdmin || isManager;
 
     if (authData) {
         return (
@@ -59,6 +65,10 @@ export const Navbar = memo(({ className }: NavbarProps) => {
                             content: t('Профиль'),
                             href: `${RoutePath.profile}/${authData.id}`,
                         },
+                        ...(isAdminPanelAvailable ? [{
+                            content: t('Админ панель'),
+                            href: `${RoutePath.admin_panel}`,
+                        }] : []),
                         {
                             content: t('Выйти'),
                             onClick: onLogout,
@@ -79,6 +89,7 @@ export const Navbar = memo(({ className }: NavbarProps) => {
             >
                 {t('Войти')}
             </Button>
+
             {isAuthModal && (
                 <LoginModal
                     isOpen={isAuthModal}

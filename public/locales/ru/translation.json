@@ -26,5 +26,8 @@
   "article-details": {
     "Back": "Назад"
   },
-  "There are no comments yet": "Комментарии отсутствуют"
+  "There are no comments yet": "Комментарии отсутствуют",
+  "about": {
+    "Admin panel": "Панель администратора"
+  }
 }

@@ -26,5 +26,8 @@
   "article-details": {
     "Back": "Back"
   },
-  "There are no comments yet": "There are no comments yet"
+  "There are no comments yet": "There are no comments yet",
+  "about": {
+    "Admin panel": "Admin panel"
+  }
 }
