@@ -11,10 +11,8 @@ interface ProfilePageProps {
 }
 
 const ProfilePage = ({ className }: ProfilePageProps) => {
-    const { t } = useTranslation('profile');
     const { id } = useParams<{ id: string }>();
 
-    if (!id) return <Text text={t('Profile not found')} />;
     return (
         <Page className={classNames('', {}, [className])}>
             <VStack gap="16" max>
