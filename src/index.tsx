@@ -9,7 +9,9 @@ import 'app/styles/index.scss';
 
 const container = document.getElementById('root');
 
-if (!container) throw new Error('Контейнер root не найден. Не удалось вмонтировать приложение');
+if (!container) {
+    throw new Error('Контейнер root не найден. Не удалось вмонтировать приложение');
+}
 
 const root = createRoot(container);
 

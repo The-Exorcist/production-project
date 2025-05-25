@@ -20,8 +20,8 @@ import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleT
 import cls from './ArticleListItem.module.scss';
 
 interface ArticleListItemProps {
-   className?: string;
-   article: Article;
+    className?: string;
+    article: Article;
     view: ArticleView;
     target?: HTMLAttributeAnchorTarget;
 }
