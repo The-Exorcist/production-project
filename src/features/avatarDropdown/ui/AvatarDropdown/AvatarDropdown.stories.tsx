@@ -1,19 +1,20 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Page } from './Page';
+import { AvatarDropdown } from './AvatarDropdown';
 
 export default {
-    title: 'shared/Page',
-    component: Page,
+    title: 'shared/AvatarDropdown',
+    component: AvatarDropdown,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof Page>;
+} as ComponentMeta<typeof AvatarDropdown>;
 
-const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
+const Template: ComponentStory<typeof AvatarDropdown> = (args) => <AvatarDropdown {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
 
 };
+
 Normal.decorators = [StoreDecorator({})];

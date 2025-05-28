@@ -1,17 +1,25 @@
 .Navbar {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: var(--navbar-height);
+  // height: var(--navbar-height);
   padding: 20px;
   background-color: var(--inverted-bg-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  text-wrap: nowrap;
 }
 
-.links,
-.dropdown {
+.links {
   margin-left: auto;
 }
+
+// .dropdown {
+
+// }
 
 .mainLink {
   margin: 15px;
@@ -22,5 +30,14 @@
 }
 
 .createBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
