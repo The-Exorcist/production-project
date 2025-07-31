@@ -1,5 +1,5 @@
 .Navbar {
-  // height: var(--navbar-height);
+  height: var(--navbar-height);
   padding: 20px;
   background-color: var(--inverted-bg-color);
   position: absolute;
@@ -9,6 +9,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   column-gap: 10px;
   text-wrap: nowrap;
 }
@@ -16,10 +17,6 @@
 .links {
   margin-left: auto;
 }
-
-// .dropdown {
-
-// }
 
 .mainLink {
   margin: 15px;
